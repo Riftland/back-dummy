@@ -9,7 +9,8 @@
     "start": "NODE_ENV=production node index.js",
     "docker:up": "docker-compose up",
     "docker:down": "docker-compose down",
-    "docker:reset": "npm run docker:down && npm run docker:up"
+    "docker:reset": "npm run docker:down && npm run docker:up",
+    "deploy": "git push heroku master"
   },
   "author": "",
   "license": "ISC",
