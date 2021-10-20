@@ -1,3 +1,4 @@
+require('dotenv').config()
 const db = require('../configs/db')
 const { sql } = require('slonik')
 

@@ -1,7 +1,7 @@
-const slonik = require('slonik')
+const slonik = require("slonik");
 
-const SLONIK_URL = 'postgres://user1:1234@localhost:5432/prueba'
+const SLONIK_URL = process.env.DATABASE_URL;
 
-const db = slonik.createPool(SLONIK_URL)
+const db = slonik.createPool(SLONIK_URL);
 
-module.exports = db
+module.exports = db;
