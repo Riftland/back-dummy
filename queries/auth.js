@@ -24,10 +24,10 @@ const register = (db) => async ({
       )
     `)
   } catch (error) {
-    console.info('> error: ', error.originalError.detail)
+    console.info('> error: ', error.message)
     return {
       error: true,
-      message: error.originalError.detail,
+      message: error.message,
     }
   }
 }
@@ -68,10 +68,10 @@ const login = (db) => async ({
       return token
     })
   } catch (error) {
-    console.info('> error: ', error.originalError.detail)
+    console.info('> error: ', error.message)
     return {
       error: true,
-      message: error.originalError.detail,
+      message: error.message,
     }
   }
 }
@@ -93,10 +93,10 @@ const user = (db) => async ({ accessToken }) => {
 
     return result
   } catch (error) {
-    console.info('> error: ', error.originalError.detail)
+    console.info('> error: ', error.message)
     return {
       error: true,
-      message: error.originalError.detail,
+      message: error.message,
     }
   }
 }
@@ -113,10 +113,10 @@ const logout = (db) => async ({ accessToken }) => {
       error: false,
     }
   } catch (error) {
-    console.info('> error: ', error.originalError.detail)
+    console.info('> error: ', error.message)
     return {
       error: true,
-      message: error.originalError.detail,
+      message: error.message,
     }
   }
 }
