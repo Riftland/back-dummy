@@ -25,4 +25,4 @@ app.use(({ statusCode = 400, error }, _, res, __) => {
   })
 })
 
-app.listen(process.env.PORT || 3001, () => console.info('> Listening at port 3001...'))
+app.listen(process.env.PORT || 3001, () => console.info('> Listening...'))
