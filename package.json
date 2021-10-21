@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "db:create": "node scripts/creation.js",
+    "db:prod:create": "NODE_ENV=production node scripts/creation.js",
     "dev": "npm run db:create && nodemon index.js",
     "start": "NODE_ENV=production node index.js",
     "docker:up": "docker-compose up",
